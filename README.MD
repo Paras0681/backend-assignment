@@ -2,7 +2,7 @@
 # Movie List Collection API
     This API is created so that user can register and create collections of movies.
     This collection can later be used which has title and some description regarding the movies in the collection
-
+## Note Also added the Postman collection for the testcases of the requests.
 - Register:
     - URL(POST): http://localhost:8000/register/
 
