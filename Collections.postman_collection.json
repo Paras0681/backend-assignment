@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "a222d41e-3dd2-405a-9bd3-f581b75057bc",
+		"name": "Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17671052"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"testing\",\r\n    \"password\": \"testing1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/register/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Movies",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxNjY2MzkxLCJpYXQiOjE2ODE2NjYwOTEsImp0aSI6IjVhMzVlOTJiZDc5OTRjZTI5ZDA5ZTBhY2RmMDU3NjI4IiwidXNlcl9pZCI6MX0.f6gguJZkiSo7lXw5WkPCj7Q2D34_BlRvsAc4nqiaVFM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/movies/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"movies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Collection",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxNjY2MzkxLCJpYXQiOjE2ODE2NjYwOTEsImp0aSI6IjVhMzVlOTJiZDc5OTRjZTI5ZDA5ZTBhY2RmMDU3NjI4IiwidXNlcl9pZCI6MX0.f6gguJZkiSo7lXw5WkPCj7Q2D34_BlRvsAc4nqiaVFM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/collection/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"collection",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request count",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxNjMzOTczLCJpYXQiOjE2ODE2MzM2NzMsImp0aSI6IjI0NmI5YjhiZjJhYjQzMGRhODI0ZmNmZDVlZWJlNGUzIiwidXNlcl9pZCI6MX0.Slg7MVoBwn2rhzQGx22As6kc9RJscor1eAj0blREDI8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/request-count/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"request-count",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reest request count",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxNjMzODc5LCJpYXQiOjE2ODE2MzM1NzksImp0aSI6ImVlNWMzZjQ5ZmVlZTRkNGFiNGUyNjM3MGRlNGEzODI4IiwidXNlcl9pZCI6MX0.7SbgQVrBWANUvs_rArpWCcnnMbeFLLGgZKHEm56t6cs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/request-count/reset/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"request-count",
+						"reset",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Collection Detailed",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxNjY2MzkxLCJpYXQiOjE2ODE2NjYwOTEsImp0aSI6IjVhMzVlOTJiZDc5OTRjZTI5ZDA5ZTBhY2RmMDU3NjI4IiwidXNlcl9pZCI6MX0.f6gguJZkiSo7lXw5WkPCj7Q2D34_BlRvsAc4nqiaVFM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/collection/f595824d-3383-4470-afa4-b66943dfae3a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"collection",
+						"f595824d-3383-4470-afa4-b66943dfae3a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Collection",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxNjIzNDIyLCJpYXQiOjE2ODE2MjMxMjIsImp0aSI6IjQ4OTdlNjY1ODhjZDQ1MGI4NDA1OWY3NjE1MzEwNGZkIiwidXNlcl9pZCI6MX0.d93-d00GKDRprfSM-M9KbVV8_Fu8Mtxm_4135mpa6-s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Horror movies\",\r\n    \"description\": \"Kamjor dilwale naa dekhe..\",\r\n    \"movies\": [\r\n        {\r\n            \"title\": \"Queerama\",\r\n            \"description\": \"50 years after decriminalisation of homosexuality in the UK, director Daisy Asquith mines the jewels of the BFI archive to take us into the relationships, desires, fears and expressions of gay men and women in the 20th century.\",\r\n            \"genres\": \"\",\r\n            \"uuid\": \"57baf4f4-c9ef-4197-9e4f-acf04eae5b4d\"\r\n        },\r\n        {\r\n            \"title\": \"Satana likuyushchiy\",\r\n            \"description\": \"In a small town live two brothers, one a minister and the other one a hunchback painter of the chapel who lives with his wife. One dreadful and stormy night, a stranger knocks at the door asking for shelter. The stranger talks about all the good things of the earthly life the minister is missing because of his puritanical faith. The minister comes to accept the stranger's viewpoint but it is others who will pay the consequences because the minister will discover the human pleasures thanks to, ehem, his sister- in -law… The tormented minister and his cuckolded brother will die in a strange accident in the chapel and later an infant will be born from the minister's adulterous relationship.\",\r\n            \"genres\": \"\",\r\n            \"uuid\": \"163ce013-03e2-47e9-8afd-e7de7688c151\"\r\n        },\r\n        {\r\n            \"title\": \"Betrayal\",\r\n            \"description\": \"When one of her hits goes wrong, a professional assassin ends up with a suitcase full of a million dollars belonging to a mob boss ...\",\r\n            \"genres\": \"Action,Drama,Thriller\",\r\n            \"uuid\": \"720e8796-5397-4e81-9bd7-763789463707\"\r\n        },\r\n        {\r\n            \"title\": \"Siglo ng Pagluluwal\",\r\n            \"description\": \"An artist struggles to finish his work while a storyline about a cult plays in his head.\",\r\n            \"genres\": \"Drama\",\r\n            \"uuid\": \"e9548ee7-6a95-4917-893e-1fa1d3a6de40\"\r\n        },\r\n        {\r\n            \"title\": \"رگ خواب\",\r\n            \"description\": \"Rising and falling between a man and woman.\",\r\n            \"genres\": \"Drama,Family\",\r\n            \"uuid\": \"9b0a4aa2-9ec7-4a3d-98ab-622275f44ea5\"\r\n        },\r\n        {\r\n            \"title\": \"Robin Hood\",\r\n            \"description\": \"Yet another version of the classic epic, with enough variation to make it interesting. The story is the same, but some of the characters are quite different from the usual, in particular Uma Thurman's very special maid Marian. The photography is also great, giving the story a somewhat darker tone.\",\r\n            \"genres\": \"Drama,Action,Romance\",\r\n            \"uuid\": \"73399935-2165-41f0-a6a4-1336ef5e5c20\"\r\n        },\r\n        {\r\n            \"title\": \"Caged Heat 3000\",\r\n            \"description\": \"It's the year 3000 AD. The world's most dangerous women are banished to a remote asteroid 45 million light years from earth. Kira Murphy doesn't belong; wrongfully accused of a crime she did not commit, she's thrown in this interplanetary prison and left to her own defenses. But Kira's a fighter, and soon she finds herself in the middle of a female gang war; where everyone wants a piece of the action... and a piece of her! \\\"Caged Heat 3000\\\" takes the Women-in-Prison genre to a whole new level... and a whole new galaxy!\",\r\n            \"genres\": \"Science Fiction\",\r\n            \"uuid\": \"129cf5d9-827c-4e42-843e-1f87ef99452f\"\r\n        },\r\n        {\r\n            \"title\": \"The Burkittsville 7\",\r\n            \"description\": \"A film archivist revisits the story of Rustin Parr, a hermit thought to have murdered seven children while under the possession of the Blair Witch.\",\r\n            \"genres\": \"Horror\",\r\n            \"uuid\": \"5e904ce8-91b7-42b4-84d9-5b53f4cb8c74\"\r\n        },\r\n        {\r\n            \"title\": \"Shadow of the Blair Witch\",\r\n            \"description\": \"In this true-crime documentary, we delve into the murder spree that was the inspiration for Joe Berlinger's \\\"Book of Shadows: Blair Witch 2\\\".\",\r\n            \"genres\": \"Mystery,Horror\",\r\n            \"uuid\": \"bcacfa33-a886-4ecb-a62a-6bbcb9d9509d\"\r\n        },\r\n        {\r\n            \"title\": \"House of Horrors\",\r\n            \"description\": \"An unsuccessful sculptor saves a madman named \\\"The Creeper\\\" from drowning. Seeing an opportunity for revenge, he tricks the psycho into murdering his critics.\",\r\n            \"genres\": \"Horror,Mystery,Thriller\",\r\n            \"uuid\": \"388c99da-0cba-4ff0-a528-faea153b43c3\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/collection/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"collection",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Collection",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxNTg5MTAxLCJpYXQiOjE2ODE1ODg4MDEsImp0aSI6IjdjZGQyOGUwNDUxNzQ3NjA4NWEyOTg3NTE0MmQzZGFmIiwidXNlcl9pZCI6MX0.mBxa7bhQqa7tckxkv9LF8fCqOTmEJ8i5MDjVhRKiEPI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Horror movies\",\r\n    \"description\": \"Kamjor dilwale naa dekhe....\",\r\n    \"movies\": [\r\n        {\r\n            \"title\": \"Caged Heat 3000\",\r\n            \"description\": \"It's the year 3000 AD. The world's most dangerous women are banished to a remote asteroid 45 million light years from earth. Kira Murphy doesn't belong; wrongfully accused of a crime she did not commit, she's thrown in this interplanetary prison and left to her own defenses. But Kira's a fighter, and soon she finds herself in the middle of a female gang war; where everyone wants a piece of the action... and a piece of her! \\\"Caged Heat 3000\\\" takes the Women-in-Prison genre to a whole new level... and a whole new galaxy!\",\r\n            \"genres\": \"Science Fiction\",\r\n            \"uuid\": \"129cf5d9-827c-4e42-843e-1f87ef99452f\"\r\n        },\r\n        {\r\n            \"title\": \"The Burkittsville 7\",\r\n            \"description\": \"A film archivist revisits the story of Rustin Parr, a hermit thought to have murdered seven children while under the possession of the Blair Witch.\",\r\n            \"genres\": \"Horror\",\r\n            \"uuid\": \"5e904ce8-91b7-42b4-84d9-5b53f4cb8c74\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/collection/07a4d67519bc47a898c40cbe86b954f3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"collection",
+						"07a4d67519bc47a898c40cbe86b954f3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Collection",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxNTg5NTg5LCJpYXQiOjE2ODE1ODkyODksImp0aSI6IjRjYTAwYWE3OTdlYTQ4Njg5ZmFjM2FlY2M3ZmRmYjg5IiwidXNlcl9pZCI6MX0.p7wWQ8SBRBdIjjTa1k02C-ZDzD7NxIgKqyJdegdErv0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/collection/07a4d67519bc47a898c40cbe86b954f3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"collection",
+						"07a4d67519bc47a898c40cbe86b954f3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
