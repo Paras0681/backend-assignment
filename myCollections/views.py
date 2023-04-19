@@ -27,11 +27,11 @@ class RegisterUserView(APIView):
     # generates access token for a user and gives it in a response
     def post(self, request):
         username = request.data.get("username", None)
-        hashed_password = make_password(request.data.get("password", None))
+        password = request.data.get("password", None)
         try:
-            if username and hashed_password:
+            if username and password:
                 user = User.objects.get_or_create(
-                    username=username, password=hashed_password)
+                    username=username, password=password)
                 token = RefreshToken.for_user(user[0])
                 return Response({'access_token': f"{str(token.access_token)}"}, status=status.HTTP_200_OK)
             return Response({'error': "Please enter valid username and password"}, status=status.HTTP_200_OK)
